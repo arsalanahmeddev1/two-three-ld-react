@@ -8,9 +8,9 @@ const Index = () => {
     <section className='categories-sec pb-[60px]'>
       <div className="container">
         <Title className='max-w-[990px] mx-auto leading-[1.2]' title='We provide a specialized service to these categories' />
-        <div className="flex flex-wrap justify-center gap-x-[15px]">
+        <div className="grid gap-x-[15px] gap-y-[40px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 place-items-center">
           {categoriesData.map((category) => (
-            <div className="categories-card" key={category.id}>
+            <div className="categories-card mx-auto" key={category.id}>
               <img src={category.image} alt={category.title} className='mb-[20px]' />
               <Title className='text-start font-bold text-black' Tag='h3' size='text-[24px]' title={category.title}/>
               <Para className='mb-[10px]' title={category.subtitle}/>

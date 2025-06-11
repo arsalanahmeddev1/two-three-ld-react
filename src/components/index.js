@@ -1,14 +1,14 @@
 import Header from './common/Header';
-import HeroBanner from './HeroBanner';
-import FeaturedProfile from './featuredProfile';
-import FilterArtist from './filterArtist';
-import LoveArt from './loveArt';
-import MarketPlace from './marketPlace';
-import NewsLetter from './newsLetter';
-import Categories from './categories';
-import SourceArt from './sourceArt';
-import Partners from './partners';
-import ContactUs from './contactUs';
+import HeroBanner from './HeroBanner/Index';
+import FeaturedProfile from './featuredProfile/Index';
+import FilterArtist from './filterArtist/Index';
+import LoveArt from './loveArt/Index';
+import MarketPlace from './marketPlace/Index';
+import NewsLetter from './newsLetter/Index';
+import Categories from './categories/Index';
+import SourceArt from './sourceArt/Index';
+import Partners from './partners/Index';
+import ContactUs from './contactUs/Index';
 export {
   Header,
   HeroBanner,

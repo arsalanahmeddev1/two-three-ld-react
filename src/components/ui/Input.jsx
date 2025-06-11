@@ -12,8 +12,8 @@ const Input = forwardRef(({
   variant = 'default',
   icon: Icon,
   className,
-  iconClassName,
-  parentClass,
+  iconClassName = '',
+  parentClass = '',
   ...rest
 }, ref) => {
   const baseClasses = 'w-full'
@@ -25,10 +25,10 @@ const Input = forwardRef(({
   }
   
   return (
-    <div className={clsx(`flex items-center relative ${parentClass}`, {
+    <div className={clsx('flex items-center relative', parentClass, {
       'space-x-2': Icon,
     })}>
-      {Icon && <Icon className={clsx(`text-gray-500 absolute ${iconClassName}`)} />}
+      {Icon && <Icon className={clsx('text-gray-500 absolute', iconClassName)} />}
       <input
         id={id}
         name={name}

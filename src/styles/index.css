@@ -10,7 +10,9 @@
  --font-cinzel: 'Cinzel', serif;
  --font-poppins: 'Poppins', sans-serif;
 }
-
+/* :root {
+  font-size: 62.5%;
+} */
 /* @utility container {
   width: 100%;
   margin-inline: auto;
@@ -24,6 +26,9 @@
   }
 } */
 /* globals */
+img {
+  max-width: 100%;
+}
 .container {
  @apply mx-auto;
 }

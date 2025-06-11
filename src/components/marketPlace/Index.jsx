@@ -51,7 +51,7 @@ export const Index = () => {
           {/* Slick Slider */}
           <Slider ref={sliderRef} {...settings}>
             {marketPlaceData.map((slide, index) => (
-              <div key={index} className="relative h-[400px] rounded-[45px] overflow-hidden">
+              <div key={index} className="relative rounded-[45px] overflow-hidden">
                 <img
                   src={slide.image}
                   alt={slide.title}
