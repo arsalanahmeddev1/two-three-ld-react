@@ -1,11 +1,21 @@
 
 import React from 'react'
-import Header from '../../components/common/Header'
 import Layout from '../../components/layout/Layout'
+import {Header, HeroBanner, FeaturedProfile, FilterArtist, LoveArt, MarketPlace, NewsLetter, Categories, SourceArt, Partners, ContactUs} from '../../components';
 const Home = () => {
   return (
     <Layout>
       <Header />
+      <HeroBanner />
+      <FeaturedProfile />
+      <FilterArtist />
+      <LoveArt />
+      <MarketPlace />
+      <NewsLetter/>
+      <Categories/>
+      <SourceArt/>  
+      <Partners/>
+      <ContactUs/>
     </Layout>
   )
 }

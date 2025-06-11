@@ -1,11 +1,14 @@
-@import "tailwindcss";
-
+@import 'tailwindcss';
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
 @theme {
-  /* --container-center: true;
+ /* --container-center: true;
   --container-padding: 1rem;
   --container-padding-lg: 2rem;
 
   --breakpoint-3xl: 1320px; */
+ --font-cinzel: 'Cinzel', serif;
+ --font-poppins: 'Poppins', sans-serif;
 }
 
 /* @utility container {
@@ -20,14 +23,37 @@
     padding-inline: 2rem;
   }
 } */
+/* globals */
 .container {
-  @apply mx-auto;
+ @apply mx-auto;
+}
+.font-cinzel {
+ font-family: var(--font-cinzel);
+}
+.font-poppins {
+ font-family: var(--font-poppins);
+}
+body {
+ overflow-x: hidden;
+ font-family: var(--font-cinzel);
+}
+/* globals end*/
+
+/* hero banner */
+.hero-banner {
+  background: url('../../images/hero-banner.png') no-repeat center/cover;
+  padding: 124px 0;
 }
 
-
+.marketplace-sec .slick-slide {
+  @apply px-[10px]
+}
+.newsletter-card {
+  background: url('../../images/newsletter-bg.png') no-repeat center/cover;
+}
 /* responsive */
 @media (min-width: 1550px) {
-  .container {
-    @apply max-w-[1500px];
-  }
+ .container {
+  @apply max-w-[1740px];
+ }
 }
